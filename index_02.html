@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Áreas - Múltiplas Casas</title>
+    <link rel="stylesheet" href="style_02.css">
+</head>
+<body>
+    <h1>Calculadora de Áreas - Múltiplas Casas</h1>
+
+    <div class="input-section">
+        <div class="input-group">
+            <label for="nomeCasa">Nome da Casa:</label>
+            <input type="text" id="nomeCasa" placeholder="Ex: Casa da Praia">
+        </div>
+
+        <div class="input-group">
+            <label for="nomeComodo">Nome do Cômodo:</label>
+            <input type="text" id="nomeComodo" placeholder="Ex: Sala, Cozinha">
+        </div>
+        <div class="input-group">
+            <label for="largura">Largura (m):</label>
+            <!--<input type="number" id="largura" step="0.1" placeholder="Ex: 3.5">-->
+            <input type="text" id="largura" placeholder="Ex: 3.5">
+        </div>
+        <div class="input-group">
+            <label for="comprimento">Comprimento (m):</label>
+            <!--<input type="number" id="comprimento" step="0.1" placeholder="Ex: 4.0">-->
+            <input type="text" id="comprimento" placeholder="Ex: 4.0">
+        </div>
+
+        <button id="addComodo">Adicionar Cômodo</button>
+        <button id="salvarCasa">Salvar Casa</button>
+    </div>
+
+    <div class="results-section">
+        <h2>Cômodos Adicionados:</h2>
+        <ul id="listaComodos">
+            <!-- Cômodos serão listados aqui -->
+        </ul>
+        <h2 id="areaTotal">Área Total: 0.00 m²</h2>
+    </div>
+
+    <div class="casas-section">
+        <h2>Casas Salvas:</h2>
+        <ul id="listaCasas">
+            <!-- Casas salvas serão listadas aqui -->
+        </ul>
+    </div>
+
+    <script src="script_02.js"></script>
+</body>
+</html>
