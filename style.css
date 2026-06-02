@@ -1,0 +1,145 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #eef2f7;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 { color: #2c3e50; 
+    margin-bottom: 30px;
+}
+
+.input-section,.results-section,.casas-section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 90%;
+    max-width: 500px;
+}
+
+.input-group {
+    margin-bottom: 15px; 
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+input[type="text"], input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+ul { 
+    list-style: none; 
+    padding: 0;
+}
+
+li {
+    background-color: #ecf0f1;
+    margin-bottom: 8px;
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.95rem;
+    color: #34495e;
+}
+li span.area-value {
+    font-weight: bold;
+    color: #27ae60;
+}
+
+#areaTotal {
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 2px solid #eee;
+}
+
+.item-comodo {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+}
+
+.inputs-comodo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.inputs-comodo input {
+    width: 80px;
+    padding: 5px;
+    font-size: 0.9rem;
+}
+
+.btn-excluir {
+    background-color: #e74c3c;
+    width: auto;
+    padding: 6px 12px;
+    align-self: flex-end;
+    margin-top: 0;
+}
+
+.btn-excluir:hover {
+    background-color: #c0392b;
+}
+
+#btnPdf {
+    background-color: #27ae60;
+    margin-top: 10px;
+}
+
+#btnPdf:hover {
+    background-color: #229954;
+}
+
+.casas-section button {
+    width: auto;
+    margin-left: 5px;
+    padding: 5px 10px;
+}
